@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Typing master</title>
+    <link href="typing.css" type="text/CSS" rel="stylesheet">
+</head>
+<body>
+    <div id="intro">
+        <h1>Typing Master</h1>
+        <div class="choose">
+       Choose Time <select id="list">
+            <option></option>
+            <option id="opt1" value="30">30s</option>
+            <option id="opt2" value="60">60s</option>
+        </select>
+        </div>
+        <button id="start" onclick="startTyping()">Start</button>
+    </div>
+    
+    <div id="container">
+        <h2>Typing Master</h2>
+        <!-- <button onclick="start()">Start</button> -->
+        <p id="timer"></p>
+        <p id="givenPara"></p>
+        <input type="text" id="userWritternLines"  placeholder="start typing here..."
+        oninput="processCurrentText()">
+        <p id="result"></p>
+       <button id="restart" onclick="restart()">Restart</button>
+    </div>
+    <script src="typing.js"></script>
+</body>
+</html>
